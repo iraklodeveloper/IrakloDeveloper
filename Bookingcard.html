@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/Bookingcardstyles.css">
+    <link rel="icon" href="https://i.ibb.co/9Swd8Fm/Gemini-Generated-Image-ko5pxsko5pxsko5p-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>Booking cards | სასტუმროს ნომრის დასაჯავშნი ბარათები</title>
+</head>
+<body>
+    <div class="nav-container">
+            <img class="nav-logo" src="https://i.ibb.co/9Swd8Fm/Gemini-Generated-Image-ko5pxsko5pxsko5p-removebg-preview.png" alt="Website Logo">
+            <h1 class="webpage-title">Geotraveler</h1>
+            <nav>
+                <ul class="nav-ul">
+                    <li class="nav-item"><a class="nav-a-links" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-a-links" href="#">Hotels</a></li>
+                    <li class="nav-item"><a class="nav-a-links" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-a-links" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    <header>
+        <div class="hero-section">
+            <h2>Discover your next adventure!</h2>
+            <button>Start searching</button>
+        </div>
+    </header>
+    <main>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Find a hotel....">
+                
+            <select id="category">
+                <option value="all">All categories</option>
+                <option value="tbilisi">Tbilisi city</option>
+                <option value="batumi">Batumi city</option>
+                <option value="racha">Racha city</option>
+                <option value="bakuriani">Bakuriani city</option>
+                <option value="kutaisi">Kutaisi city</option>
+            </select>
+
+            <div class="priceRange">
+                Max. Price: <input type="range" id="priceRange" min="0" max="2500" value="2500">
+                <span id="priceLabel">2500</span>$
+            </div>
+
+            <label class="popular-checkbox">
+                <input type="checkbox" id="popularOnly">Only popular
+            </label>
+        </div>
+        
+        <div id="productList"></div>
+    </main>
+    <script src="../Javascript/bookinscripts.js"></script>
+</body>
+</html>
